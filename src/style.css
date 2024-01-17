@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Croissant+One&family=Great+Vibes&family=Inter:wght@300;400;500;600&family=Merriweather:ital,wght@1,300&family=Raleway:ital,wght@1,300&family=Ruwudu&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: inter;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    padding: .8rem;
+    justify-content: center;
+    color: white;
+    height: 8rem;
+    box-shadow: 2px 2px 50px 8px rgba(0,0,0,.7);
+    background-color:  #4F6F52;
+}
+
+form{
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    box-shadow: 2px 2px 25px 4px rgba(0,0,0,.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+form label{
+    display: flex;
+    flex-direction: column;
+}
+
+form label span{
+    font-size: 1.3rem;
+    font-weight: 430;
+}
+
+form label input{
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #86A789;
+    outline: none;
+    font-size: 1.2rem;
+    color: white;
+}
+
+form label input::placeholder{
+    color: white;
+}
+
+form button{
+    margin-top: 10%;
+    border: none;
+    background-color: #bad7b9;
+    padding: 1rem;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all .7s;
+}
+
+form button:hover{
+    background-color: #4F6F52;
+    color: white;
+}
+
+.tasks_container{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    border: thin solid;
+    margin: 5% auto 0 auto;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.tasks_container .task{
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.tasks_container .task input{
+    padding: .7rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #86A789;
+    outline: none;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.tasks_container .task input::placeholder{
+    color: white;
+}
+
+.tasks_container button{
+    cursor: pointer;
+    border-radius: 10px;
+    padding: .8rem;
+    font-size: 1rem;
+    width: 35%;
+    margin: 8% auto 5% auto; 
+    border: none;
+    background-color: #4F6F52;
+    color: white;
+}
+
+.tasks_container .task .actions{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    right: 8%;
+    gap: 2rem;
+}
+
+.tasks_container .task .actions i {
+    cursor: pointer;
+}
+
+@media only screen and (max-width:750px){
+    form{
+        width: 80%;
+        margin: 10% auto 20% auto;
+    }
+
+    form label input{
+        width: 100%;
+        padding: .6rem;
+    }
+
+    form button{
+        padding: .8rem;
+    }
+
+    .title{
+        font-size: .5rem;
+    }
+
+    .section_principal{
+        padding: 1.5rem;
+    }
+
+    .tasks_container{
+        width: 90%;
+        padding: 1.4rem;
+    }
+
+    .tasks_container button{
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width:751px) and (max-width:1024px){
+    form{
+        width: 60%;
+        margin: 10% auto 20% auto;
+    }
+
+    form label input{
+        width: 100%;
+        padding: .6rem;
+    }
+
+    form button{
+        padding: .8rem;
+    }
+
+    .title{
+        font-size: .5rem;
+    }
+
+    .section_principal{
+        padding: 1.5rem;
+    }
+
+    .tasks_container{
+        width: 90%;
+        padding: 1.4rem;
+    }
+
+    .tasks_container button{
+        width: 80%;
+    }
+}
